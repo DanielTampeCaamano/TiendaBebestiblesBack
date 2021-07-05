@@ -1,0 +1,6 @@
+PUT http://localhost:3000/api/products/60b542c0e08c0c2f44863e0d HTTP/1.1
+content-type: application/json
+
+{
+    "price": 25000
+}

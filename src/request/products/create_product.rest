@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/products HTTP/1.1
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTI0OTFiMmVlOWZiMmViMDUwNTY5OSIsImVtYWlsIjoidGVzdEBleHByZXNzLmNsIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE2MjU0NDI1OTEsImV4cCI6MTYyODAzNDU5MX0.X1EWLxX8aJ826pZbiyjCP_gjyA7yNrKGZmTTWDLOGDM
+
+{
+    "name": "Breckenridge Vanilla Porter",
+    "description": "¿Quién hubiera pensado que en las selvas de Papúa Nueva Guinea y en Madagascar hubiera nacido el ingrediente perfecto para elaborar una clásica Porter de Colorado, USA? Así es, las auténticas vainas de vainilla de Madagascar combinadas con caramelo y maltas de Munich crean la cerveza perfecta, equilibrada y sabrosa en todo momento. No te dejes engañar por su profundo color marrón oscuro, esta Porter es tan suave y fácil de beber, que te dejará sin palabras. Si te gusta la Vainilla, ¡Este es tu Pack!",
+    "price": 1890
+}
