@@ -12,7 +12,7 @@ const getAllCarritos = async (req, res) => {
 };
 
 // Obtener todos los carros de un usuario
-const getUserCarrito = async (req, res) => {
+const getUserCarritos = async (req, res) => {
   try {
     const carritos = await Carrito.find({ user: req.params.id }).populate("user", "firstName lastName -_id");
     res.json(carritos);
@@ -87,5 +87,5 @@ module.exports = {
   getCarritoById,
   updateCarrito,
   deleteCarrito,
-  getUserCarrito
+  getUserCarritos
 };
