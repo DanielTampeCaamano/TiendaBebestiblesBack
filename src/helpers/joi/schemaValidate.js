@@ -28,6 +28,11 @@ const productSchema = joi.object({
     price: joi.number().min(1).required().messages(stringMessages("El precio del producto", "o")),
 });
 
+const carritoSchema = joi.object({
+    item: joi.string().min(2).max(255).required().messages(stringMessages("El nombre del producto", "o")),
+    description: joi.string().min(5).required().messages(stringMessages("La descripción del producto", "a")),
+    precio: joi.number().min(1).required().messages(stringMessages("El precio del producto", "o")),
+});
 module.exports = {
     schemaRegister,
     schemaLogin,
@@ -35,5 +40,6 @@ module.exports = {
     schemaUpdatePassword,
     forgotPasswordSchema,
     resetPasswordSchema,
-    productSchema
+    productSchema,
+    carritoSchema
 }
